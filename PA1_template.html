@@ -224,7 +224,12 @@ It is now possible to collect a large amount of data about personal movement usi
 <pre><code class="r">library(dplyr)
 #load the data
 setwd(&#39;E:/Coursera/Reproducible research/Week 2/repdata-data-activity/&#39;)
-data &lt;- read.csv(&#39;activity.csv&#39;)
+</code></pre>
+
+<pre><code>## Error in setwd(&quot;E:/Coursera/Reproducible research/Week 2/repdata-data-activity/&quot;): cannot change working directory
+</code></pre>
+
+<pre><code class="r">data &lt;- read.csv(&#39;activity.csv&#39;)
 #check the column names
 names(data)
 </code></pre>

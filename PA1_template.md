@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: 'Reproducible Research: Peer Assessment 1'
 output: html_document
 ---
@@ -28,6 +29,13 @@ opts_chunk$set(warning = FALSE, message = FALSE)
 library(dplyr)
 #load the data
 setwd('E:/Coursera/Reproducible research/Week 2/repdata-data-activity/')
+```
+
+```
+## Error in setwd("E:/Coursera/Reproducible research/Week 2/repdata-data-activity/"): cannot change working directory
+```
+
+```r
 data <- read.csv('activity.csv')
 #check the column names
 names(data)
@@ -232,4 +240,5 @@ qplot(interval,mean.steps., data = ave_week, facets = Weekdays_end ~., geom = "l
 ```
 
 ![plot of chunk pannel plot by weekend and weekday](figure/pannel plot by weekend and weekday-1.png) 
+
 
